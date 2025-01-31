@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Provide the path the directory hosting the SVGs
+# Provide the path containing svg without meta
 if [ $# -ne 1 ]; then
 	echo "Usage: $0 <path_to_directory>"
 	exit 1
@@ -10,7 +10,7 @@ path="$1"
 
 for file in "$path"/*.svg; do
 	filename=$(basename "$file" .svg)
-	dir_name="$path/$filename"
-	mkdir -p "$dir_name"
-	mv "$file" "$dir_name"
+	subdir="$path/$filename"
+	mkdir -p "$subdir"
+	mv "$file" "$subdir"
 done

@@ -1,0 +1,36 @@
+auto
+default = left_ptr; arrow
+none
+context-menu
+help = question_arrow
+pointer = hand2
+progress = left_ptr_watch
+wait = watch
+cell = plus
+crosshair = cross
+text = xterm
+vertical-text
+alias = link; dnd-link
+copy = dnd-copy
+move
+no-drop = dnd-no-drop
+not-allowed = forbidden; crossed_circle
+grab = hand1
+grabbing = closedhand; move; dnd-move
+all-scroll = size_all
+col-resize
+row-resize
+n-resize
+e-resize
+s-resize
+w-resize
+ne-resize = ur_angle; top_right_corner
+nw-resize = ul_angle; top_left_corner
+se-resize = lr_angle; bottom_right_corner
+sw-resize = ll_angle; bottom_left_corner
+ew-resize = h_double_arrow; sb_h_double_arrow; size_hor
+ns-resize = v_double_arrow; sb_v_double_arrow; size_ver
+nesw-resize = fd_double_arrow; size_fdiag
+nwse-resize = bd_double_arrow; size_bdiag
+zoom-in
+zoom-out

@@ -9,11 +9,7 @@ fi
 path="$1"
 
 for subdir in "$path"/*/; do
-	cp meta_template.hl "$subdir"/meta.hl
-
-	for file in "$subdir"/*.svg; do
-		filename=$(basename "$file")
-		line="define_size = 0, $filename"
-		echo "$line" >>"$subdir/meta.hl"
+	for file in "$subdir"*.svg; do
+		rsvg-convert -w 256 -h 256 "$file" -f svg -o "$file"
 	done
 done
