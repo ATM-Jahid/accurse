@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Provide the path containing svg without meta
+# Provide the path containing svg files
 if [ $# -ne 1 ]; then
 	echo "Usage: $0 <path_to_directory>"
 	exit 1
