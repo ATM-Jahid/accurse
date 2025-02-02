@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Provide the path containing svg files
+# Provide the path that has subdirs of svg and meta
 if [ $# -ne 1 ]; then
 	echo "Usage: $0 <path_to_directory>"
 	exit 1

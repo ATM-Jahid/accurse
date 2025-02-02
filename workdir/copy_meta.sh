@@ -9,7 +9,7 @@ fi
 path="$1"
 
 for subdir in "$path"/*/; do
-	cp meta_template.hl "$subdir"/meta.hl
+	cp ../templates/meta.hl "$subdir"/meta.hl
 
 	for file in "$subdir"/*.svg; do
 		filename=$(basename "$file")
