@@ -1,6 +1,6 @@
 [theme]
 name = 'Bibata'
-description = 'Modified Generic Bibata'
+description = 'Bibata for lefties'
 version = '0.1'
 author = 'ATM Jahid Hasan'
 
@@ -8,18 +8,17 @@ author = 'ATM Jahid Hasan'
 shape_size = 256
 x_hotspot = 128
 y_hotspot = 128
-anim_delay = 40
-x11_sizes = [16, 24, 32, 40, 48]
+xcur_sizes = [24, 32, 40, 48, 56, 64, 72]
+cleanup = ['hycur', 'xcur']
 
 [cursors]
 [cursors.bd_double_arrow]
-symlinks = ['nwse-resize', 'size_fdiag']
-hash_syms = ['c7088f0f3e6c8088236ef8e1e3e70000']
+symlinks = ["nwse-resize", "size_fdiag"]
 
 [cursors.bottom_left_corner]
 x_hotspot = 26
 y_hotspot = 232
-symlinks = ['sw-resize']
+symlinks = ["sw-resize"]
 
 [cursors.bottom_right_corner]
 x_hotspot = 229
@@ -40,100 +39,85 @@ x_hotspot = 127
 y_hotspot = 17
 
 [cursors.circle]
-x_hotspot = 55
-y_hotspot = 17
+x_hotspot = 207
+y_hotspot = 24
 symlinks = ['forbidden']
 
 [cursors.context-menu]
-x_hotspot = 57
-y_hotspot = 17
+x_hotspot = 207
+y_hotspot = 24
 
 [cursors.copy]
-x_hotspot = 55
-y_hotspot = 17
-hash_syms = [
-  '1081e37283d90000800003c07f3ef6bf',
-  '6407b0e94181790501fd1e167b474872',
-  'b66166c04f8c3109214a4fbd64a50fc8'
-]
+x_hotspot = 207
+y_hotspot = 24
 
 [cursors.cross]
-symlinks = ['cross_reverse', 'diamond_cross']
+symlinks = ["cross_reverse", "diamond_cross"]
 
 [cursors.crossed_circle]
-symlinks = ['not-allowed']
-hash_syms = ['03b6e0fcb3499374a867c041f52298f0']
+symlinks = ["not-allowed"]
 
 [cursors.crosshair]
 
 [cursors.dnd_no_drop]
-x_hotspot = 100
-y_hotspot = 65
-symlinks = ['no-drop']
+x_hotspot = 156
+y_hotspot = 68
+symlinks = ["no-drop"]
 
 [cursors.dnd-ask]
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 
 [cursors.dnd-copy]
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 
 [cursors.dnd-link]
-x_hotspot = 100
-y_hotspot = 65
+x_hotspot = 156
+y_hotspot = 68
 symlinks = ['alias']
 
 [cursors.dotbox]
-symlinks = ['dot_box_mask', 'draped_box', 'icon', 'target']
+symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
-symlinks = ['nesw-resize', 'size_bdiag']
-hash_syms = ['fcf1c3c7cd4491d801f1e1c78f100000']
+symlinks = ["nesw-resize", "size_bdiag"]
 
 [cursors.grabbing]
-x_hotspot = 128
-y_hotspot = 66
+x_hotspot = 112
+y_hotspot = 64
 symlinks = [
-  'closedhand',
-  'dnd-move',
-  'dnd-none',
+  "closedhand",
+  "dnd-move",
+  "dnd-none",
 ]
-hash_syms = ['fcf21c00b30f7e3f83fe0dfd12e71cff']
 
 [cursors.hand1]
-x_hotspot = 144
-y_hotspot = 79
-symlinks = ['grab', 'openhand']
+x_hotspot = 97
+y_hotspot = 80
+symlinks = ["grab", "openhand"]
 
 [cursors.hand2]
-x_hotspot = 114
-y_hotspot = 18
+x_hotspot = 138
+y_hotspot = 14
 symlinks = [
-  'pointer',
-  'pointing_hand',
-]
-hash_syms = [
-  '9d800788f1b08800ae810202380a0822',
-  'e29285e634086352946a0e7090d73106'
+  "pointer",
+  "pointing_hand"
 ]
 
 [cursors.left_ptr]
-x_hotspot = 55
-y_hotspot = 17
-symlinks = ['arrow', 'default', 'top_left_arrow']
+x_hotspot = 207
+y_hotspot = 24
+symlinks = ["arrow", "default", "top_left_arrow"]
 
 [cursors.left_ptr_watch]
-x_hotspot = 55
-y_hotspot = 17
+x_hotspot = 197
+y_hotspot = 24
 symlinks = [
-  'progress'
+  "progress"
 ]
-hash_syms = [
-  '00000000000000020006000e7e9ffc3f',
-  '08e8e1c95fe2fc01f976f1e063a24ccd',
-  '3ecb610c1bf2410f44200f48c40d3599',
-]
+animated = 1
+anim_delay =25
 
 [cursors.left_side]
 x_hotspot = 21
@@ -145,13 +129,8 @@ x_hotspot = 230
 y_hotspot = 128
 
 [cursors.link]
-x_hotspot = 55
-y_hotspot = 17
-hash_syms = [
-  '3085a0e285430894940527032f8b26df',
-  '640fb0e74195791501fd1ed57b41487f',
-  'a2a266d0498c3104214a47bd64ab0fc8',
-]
+x_hotspot = 207
+y_hotspot = 24
 
 [cursors.ll_angle]
 x_hotspot = 30
@@ -163,17 +142,13 @@ y_hotspot = 230
 
 [cursors.move]
 symlinks = [
-  'all-scroll',
-  'fleur',
-  'size_all'
-]
-hash_syms = [
-  '4498f0e0c1937ffe01fd06f973665830',
-  '9081237383d90e509aa00f00170e968f'
+  "all-scroll",
+  "fleur",
+  "size_all"
 ]
 
 [cursors.pencil]
-x_hotspot = 46
+x_hotspot = 211
 y_hotspot = 211
 symlinks = ['draft']
 
@@ -181,26 +156,22 @@ symlinks = ['draft']
 symlinks = ['cell']
 
 [cursors.pointer-move]
-x_hotspot = 55
-y_hotspot = 17
+x_hotspot = 207
+y_hotspot = 24
 
 [cursors.question_arrow]
 x_hotspot = 42
 y_hotspot = 86
 symlinks = [
-  'help',
-  'left_ptr_help',
-  'whats_this',
-]
-hash_syms = [
-  '5c6cd98b3f3ebcb1f9c7f1c204630408',
-  'd9ce0ab605698f320427677b458ad60b',
+  "help",
+  "left_ptr_help",
+  "whats_this",
 ]
 
 [cursors.right_ptr]
-x_hotspot = 204
+x_hotspot = 55
 y_hotspot = 17
-symlinks = ['draft_large', 'draft_small']
+symlinks = ["draft_large", "draft_small"]
 
 [cursors.right_side]
 x_hotspot = 233
@@ -218,16 +189,12 @@ symlinks = ['down-arrow']
 
 [cursors.sb_h_double_arrow]
 symlinks = [
-  'col-resize',
-  'ew-resize',
-  'h_double_arrow',
-  'size-hor',
-  'size_hor',
-  'split_h',
-]
-hash_syms = [
-  '028006030e0e7ebffc7f7070c0600140',
-  '14fef782d02440884392942c1120523'
+  "col-resize",
+  "ew-resize",
+  "h_double_arrow",
+  "size-hor",
+  "size_hor",
+  "split_h",
 ]
 
 [cursors.sb_left_arrow]
@@ -247,17 +214,13 @@ symlinks = ['up-arrow']
 
 [cursors.sb_v_double_arrow]
 symlinks = [
-  'double_arrow',
-  'ns-resize',
-  'row-resize',
-  'size-ver',
-  'size_ver',
-  'split_v',
-  'v_double_arrow',
-]
-hash_syms = [
-  '00008160000006810000408080010102',
-  '2870a09082c103050810ffdffffe0204'
+  "double_arrow",
+  "ns-resize",
+  "row-resize",
+  "size-ver",
+  "size_ver",
+  "split_v",
+  "v_double_arrow",
 ]
 
 [cursors.tcross]
@@ -294,19 +257,21 @@ y_hotspot = 33
 
 [cursors.wait]
 symlinks = ['watch']
+animated = 1
+anim_delay =25
 
 [cursors.wayland-cursor]
 
 [cursors.X_cursor]
-symlinks = ['pirate', 'x-cursor']
+symlinks = ["pirate", "x-cursor"]
 
 [cursors.xterm]
-symlinks = ['ibeam', 'text']
+symlinks = ["ibeam", "text"]
 
 [cursors.zoom-in]
-x_hotspot = 116
+x_hotspot = 140
 y_hotspot = 116
 
 [cursors.zoom-out]
-x_hotspot = 116
+x_hotspot = 140
 y_hotspot = 116
