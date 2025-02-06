@@ -94,6 +94,9 @@ def handle_xcur(dest_path, data):
     with index_path.open('w') as f:
         f.write(index_str)
 
+    if 'xcur' in data.get('config', {}).get('cleanup', []):
+        shutil.rmtree(png_path)
+
     return True
 
 def handle_hypr(dest_path, data):
@@ -142,7 +145,7 @@ def handle_hypr(dest_path, data):
                 if path.is_file():
                     hlc_f.write(path, path.name)
 
-        if data.get('config', {}).get('cleanup') == 1:
+        if 'hycur' in data.get('config', {}).get('cleanup', []):
             shutil.rmtree(hypr_shape_path)
 
     manifest_hl_str = (
