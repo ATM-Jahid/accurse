@@ -17,8 +17,7 @@ def svg_to_png(input_svg, output_png, width, height):
     ])
 
 def handle_xcur(dest_path, data):
-    # get it from data['config']['xcur_sizes']
-    png_size = 24
+    png_sizes = data['config']['xcur_sizes']
 
     png_path = dest_path/'pngs'
     png_path.mkdir(parents=True)
@@ -43,16 +42,21 @@ def handle_xcur(dest_path, data):
         # save to png files; populate shape_in_str
         for svg_f in svg_files:
             png_name = f'{svg_f.stem}.png'
-            svg_to_png(svg_f, png_path/png_name, png_size, png_size)
 
-            inc_str = (
-                f'{png_size} '
-                f'{int(xhot/canvas_sz*png_size+0.5)} '
-                f'{int(yhot/canvas_sz*png_size+0.5)} '
-                f'{png_path/png_name} '
-                f'{ani_delay}\n'
-            )
-            shape_in_str += inc_str
+            for png_sz in png_sizes:
+                sz_path = png_path/f'{png_sz}x{png_sz}'
+                sz_path.mkdir(parents=True, exist_ok=True)
+
+                svg_to_png(svg_f, sz_path/png_name, png_sz, png_sz)
+
+                inc_str = (
+                    f'{png_sz} '
+                    f'{int(xhot/canvas_sz*png_sz+0.5)} '
+                    f'{int(yhot/canvas_sz*png_sz+0.5)} '
+                    f'{sz_path/png_name} '
+                    f'{ani_delay}\n'
+                )
+                shape_in_str += inc_str
 
         # generate shape.in
         shape_in_path = png_path/f'{shape}.in'
@@ -60,13 +64,14 @@ def handle_xcur(dest_path, data):
             f.write(shape_in_str)
 
         # Subprocess run needs some magic because different cli programs do
-        # different things with paths
+        # different things with paths. It also depends on where you are
+        # running this python program from.
 
         # generate shape (xcur)
         subprocess.run([
             'xcursorgen',
-            shape_in_path,
-            xcur_path/shape
+            shape_in_path, # absolute path of the config file
+            xcur_path/shape # absolute path to the cursors dir
         ])
 
         # symlinks
@@ -75,8 +80,8 @@ def handle_xcur(dest_path, data):
                 subprocess.run([
                     'ln',
                     '-s',
-                    shape,
-                    xcur_path/syml
+                    shape, # target is just the name since it's in the same dir
+                    xcur_path/syml # absolute path for putting the sym in place
                 ])
 
     index_str = (
