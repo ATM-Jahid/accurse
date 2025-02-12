@@ -1,4 +1,4 @@
-# atomic-cursors
+# accurse
 Atomsky's cursor maintainer
 
 ## Why?
@@ -20,5 +20,5 @@ and packaged in a single folder. The workflow will be:
 
 ## License
 Copyright (C) 2025 ATM Jahid Hasan<br>
-**atomic-cursors** is released under the
+**accurse** is released under the
 [GNU AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html).

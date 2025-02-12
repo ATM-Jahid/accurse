@@ -1,0 +1,17 @@
+[project]
+name = "accurse"
+version = "0.1.0"
+description = "Atomsky's cursor maintainer"
+readme = "README.md"
+authors = [
+    { name = "ATM Jahid Hasan", email = "atmjahidhasan@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+accurse = "accurse.runner:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
