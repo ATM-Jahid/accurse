@@ -10,9 +10,16 @@ def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
         hypr_shape_path = hycur_path/shape
         shutil.copytree(dest_path/'svgs'/shape, hypr_shape_path)
 
+        # Only the names of svg files (for meta.hl files)
+        svg_files = [f.name for f in hypr_shape_path.iterdir() if f.suffix == ".svg"]
+        svg_files.sort() # because iterdir() messes up the order of the files
+
         xhot = props.get('x_hotspot', data['config'].get('x_hotspot', 0))
         yhot = props.get('y_hotspot', data['config'].get('y_hotspot', 0))
         canvas_sz = data['config']['shape_size']
+        # If mirror image is requested and if the shape flips
+        if data['config'].get('mirror', 0) == 1 and props.get('flips', 0) == 1:
+            xhot = canvas_sz - xhot
 
         sym_str = ''
         if 'symlinks' in props:
@@ -20,9 +27,7 @@ def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
                 sym_str += f'define_override = {syml}\n'
 
         file_str = ''
-        svg_files = [f.name for f in hypr_shape_path.iterdir() if f.suffix == ".svg"]
-        svg_files.sort() # because iterdir() messes up the order of the files
-        if props.get('animated') == 1:
+        if props.get('animated', 0) == 1:
             ani_delay = props['anim_delay']
             for svg_f in svg_files:
                 file_str += f'define_size = 0, {svg_f}, {ani_delay}\n'

@@ -23,17 +23,22 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
 
     for shape, props in data['cursors'].items():
         svg_shape_path = svg_path/shape
+
+        # Full path of svg files (for xcursorgen)
         svg_files = [f for f in svg_shape_path.iterdir() if f.suffix == ".svg"]
-        svg_files.sort()
+        svg_files.sort() # because iterdir() messes up the order of the files
 
         xhot = props.get('x_hotspot', data['config'].get('x_hotspot', 0))
         yhot = props.get('y_hotspot', data['config'].get('y_hotspot', 0))
         canvas_sz = data['config']['shape_size']
+        # If mirror image is requested and if the shape flips
+        if data['config'].get('mirror', 0) == 1 and props.get('flips', 0) == 1:
+            xhot = canvas_sz - xhot
+
+        # xcursorgen can ignore ani_delay for static cursors
         ani_delay = props.get('anim_delay', 0)
 
-        # for the shape.in file
         shape_in_str = ''
-
         # save to png files; populate shape_in_str
         for svg_f in svg_files:
             png_name = f'{svg_f.stem}.png'

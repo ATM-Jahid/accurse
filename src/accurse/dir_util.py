@@ -13,7 +13,7 @@ def get_dest_path(asset_path: Path) -> Optional[Path]:
         return None
     else:
         dest_path.mkdir(parents=True)
-        print(f'Created "{pack_dirname}".')
+        print(f'Created dir "{pack_dirname}".')
         return dest_path
 
 def create_svgdir(asset_path: Path, dest_path: Path, data: dict[str, any]) -> bool:
