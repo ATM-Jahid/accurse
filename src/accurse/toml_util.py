@@ -1,28 +1,15 @@
+from typing import Any, Optional
 from pathlib import Path
 import tomllib
-from accurse.svg_util import create_svgdir
-from accurse.hycur import handle_hypr
-from accurse.xcur import handle_xcur
 
-def read_toml(metadata_path: str) -> bool:
-    metadata_path = Path(metadata_path).resolve()
-    asset_path = metadata_path.parent
-    asset_dir = asset_path.name
-    pack_dir = f'AC-{asset_dir}'
-
-    dest_path = asset_path.parent/pack_dir
-    if not dest_path.exists():
-        dest_path.mkdir(parents=True)
-    else:
-        print('Package directory already exists! Aborting ...')
-        return False
-
-    with metadata_path.open('rb') as file:
-        data = tomllib.load(file)
-
-    create_svgdir(asset_path, dest_path, data)
-
-    handle_hypr(dest_path, data)
-    handle_xcur(dest_path, data)
-
+def check_integrity(toml_data: dict[str, Any]) -> bool:
+    # check if essential values exist
     return True
+
+def read_toml(metadata_path: Path) -> Optional[dict[str, Any]]:
+    try:
+        with metadata_path.open('rb') as file:
+            return tomllib.load(file)
+    except (tomllib.TOMLDecodeError, FileNotFoundError, IsADirectoryError):
+        print('Path to a valid TOML is not provided.')
+        return None

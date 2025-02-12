@@ -2,7 +2,7 @@ import shutil
 from pathlib import Path
 import zipfile
 
-def handle_hypr(dest_path: Path, data: dict[str, any]) -> bool:
+def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
     hycur_path = dest_path/'hyprcursors'
     hycur_path.mkdir(parents=True)
 
