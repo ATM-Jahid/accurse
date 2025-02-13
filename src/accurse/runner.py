@@ -35,8 +35,8 @@ def main() -> bool:
     # Process svgs: rescale, recolor, flip
     proc_svgs(dest_path, toml_data)
 
-    #handle_hycur(dest_path, toml_data)
+    handle_hycur(dest_path, toml_data)
 
-    #handle_xcur(dest_path, toml_data)
+    handle_xcur(dest_path, toml_data)
 
     return True
