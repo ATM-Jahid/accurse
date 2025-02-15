@@ -1,7 +1,19 @@
 import shutil
+import subprocess
 from pathlib import Path
 from lxml import etree
 from accurse.hash_util import gen_hash
+
+def gen_png(input_svg: Path, output_png: Path, width: int, height: int) -> bool:
+    subprocess.run([
+        'rsvg-convert',
+        '-w', str(width),
+        '-h', str(height),
+        '-o', output_png,
+        input_svg
+    ])
+
+    return True
 
 def rescale_svg(file: Path, shape_size: int) -> bool:
     parser = etree.XMLParser(remove_blank_text=True)

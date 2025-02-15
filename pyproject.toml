@@ -1,7 +1,7 @@
 [project]
 name = "accurse"
 version = "0.1.0"
-description = "Atomsky's cursor maintainer"
+description = "Atomsky's cursor packager"
 readme = "README.md"
 authors = [
     { name = "ATM Jahid Hasan", email = "atmjahidhasan@gmail.com" }
@@ -10,6 +10,10 @@ requires-python = ">=3.13"
 dependencies = [
     "lxml>=5.3.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/ATM-Jahid/accurse"
+Issues = "https://github.com/ATM-Jahid/accurse/issues"
 
 [project.scripts]
 accurse = "accurse.runner:main"

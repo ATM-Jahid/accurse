@@ -1,18 +1,13 @@
+import os
 import shutil
 from pathlib import Path
 import subprocess
-
-def svg_to_png(input_svg, output_png, width, height):
-    subprocess.run([
-        'rsvg-convert',
-        '-w', str(width),
-        '-h', str(height),
-        '-o', output_png,
-        input_svg
-    ])
+from accurse.svg_util import gen_png
 
 def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
-    png_sizes = data['config']['xcur_sizes']
+    print('Making xcursors ...')
+
+    png_sizes = data['config'].get('xcur_sizes', [])
 
     png_path = dest_path/'pngs'
     png_path.mkdir(parents=True)
@@ -22,11 +17,14 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
     xcur_path.mkdir(parents=True)
 
     for shape, props in data['cursors'].items():
+        print(f'Processing {shape}')
+
         svg_shape_path = svg_path/shape
 
         # Full path of svg files (for xcursorgen)
         svg_files = [f for f in svg_shape_path.iterdir() if f.suffix == ".svg"]
         svg_files.sort() # because iterdir() messes up the order of the files
+        print(f'\t{len(svg_files)} SVG file(s) found')
 
         xhot = props.get('x_hotspot', data['config'].get('x_hotspot', 0))
         yhot = props.get('y_hotspot', data['config'].get('y_hotspot', 0))
@@ -39,7 +37,8 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
         ani_delay = props.get('anim_delay', 0)
 
         shape_in_str = ''
-        # save to png files; populate shape_in_str
+        # make pngs in size dirs; populate shape_in_str
+        print('\tgenerating pngs')
         for svg_f in svg_files:
             png_name = f'{svg_f.stem}.png'
 
@@ -47,7 +46,8 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
                 sz_path = png_path/f'{png_sz}x{png_sz}'
                 sz_path.mkdir(parents=True, exist_ok=True)
 
-                svg_to_png(svg_f, sz_path/png_name, png_sz, png_sz)
+                # create pngs from the svg file
+                gen_png(svg_f, sz_path/png_name, png_sz, png_sz)
 
                 inc_str = (
                     f'{png_sz} '
@@ -63,26 +63,21 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
         with shape_in_path.open('w') as f:
             f.write(shape_in_str)
 
-        # Subprocess run needs some magic because different cli programs do
-        # different things with paths. It also depends on where you are
-        # running this python program from.
+        # Be careful about subprocess runs because different cli programs
+        # expect different paths. It also depends on where you are running this
+        # python program from. Thus, use absolute path if possible.
 
         # generate shape (xcur)
+        print('\tcompiling')
         subprocess.run([
             'xcursorgen',
-            shape_in_path, # absolute path of the config file
-            xcur_path/shape # absolute path to the cursors dir
+            shape_in_path, # absolute path to the shape.in file
+            xcur_path/shape # absolute path to cursors/shape (xcur file)
         ])
 
         # symlinks
-        if 'symlinks' in props:
-            for syml in props['symlinks']:
-                subprocess.run([
-                    'ln',
-                    '-s',
-                    shape, # target is just the name since it's in the same dir
-                    xcur_path/syml # absolute path for putting the sym in place
-                ])
+        for syml in props.get('symlinks', []):
+            os.symlink(shape, xcur_path/syml)
 
     index_str = (
         f'[Icon Theme]\n'
@@ -97,4 +92,5 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
     if 'xcur' in data.get('config', {}).get('cleanup', []):
         shutil.rmtree(png_path)
 
+    print('Finished making xcursors.\n')
     return True

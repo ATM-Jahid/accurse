@@ -131,7 +131,7 @@ symlinks = [
   "progress"
 ]
 animated = 1
-anim_delay =25
+anim_delay = 25
 flips = 1
 
 [cursors.left_side]

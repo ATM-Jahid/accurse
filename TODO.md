@@ -1,6 +1,5 @@
 # TODO
-- Comment more
-- Print out more info
-- Wrap subprocesses
-- Write metadata.toml guide
-- Put example assets
+- Write metadata.toml guide (readme)
+- Put example assets (bibata, breeze, future)
+- Make PyPI package when there are assets
+- Check integrity of given metadata.toml
