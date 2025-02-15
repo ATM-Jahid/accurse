@@ -1,0 +1,269 @@
+[theme]
+name = 'Breeze'
+description = 'Extended Breeze cursor theme'
+version = '0.1'
+author = 'ATM Jahid Hasan'
+
+[config]
+shape_size = 256
+x_hotspot = 128
+y_hotspot = 128
+old_substr = ['#00FF00', '#0000FF']
+new_substr = ['#4D4D4D', '#FFFFFF']
+mirror = 0
+xcur_sizes = [32, 40, 48, 56, 64]
+cleanup = ['hycur', 'xcur']
+
+[cursors]
+[cursors.all-scroll]
+symlinks = ["fleur", "size_all"]
+
+[cursors.bd_double_arrow]
+x_hotspot = 127
+y_hotspot = 124
+symlinks = [
+  "nw-resize",
+  "nwse-resize",
+  "size_fdiag",
+  "se-resize",
+]
+
+[cursors.bottom_left_corner]
+x_hotspot = 61
+y_hotspot = 190
+
+[cursors.bottom_right_corner]
+x_hotspot = 190
+y_hotspot = 190
+
+[cursors.bottom_side]
+x_hotspot = 128
+y_hotspot = 212
+
+[cursors.center_ptr]
+x_hotspot = 128
+y_hotspot = 30
+
+[cursors.col-resize]
+symlinks = ["split_h"]
+
+[cursors.color-picker]
+x_hotspot = 50
+y_hotspot = 205
+flips = 1
+
+[cursors.context-menu]
+x_hotspot = 69
+y_hotspot = 30
+flips = 1
+
+[cursors.copy]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = [
+  "dnd-copy",
+]
+flips = 1
+
+[cursors.cross]
+symlinks = ["cross_reverse", "diamond_cross", "tcross", "crosshair"]
+
+[cursors.crossed_circle]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = ["forbidden", "not-allowed"]
+flips = 1
+
+[cursors.dnd_no_drop]
+symlinks = [
+  "circle",
+  "dnd-no-drop",
+  "no-drop",
+]
+
+[cursors.dotbox]
+symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
+
+[cursors.fd_double_arrow]
+x_hotspot = 126
+y_hotspot = 125
+symlinks = [
+  "ne-resize",
+  "nesw-resize",
+  "sw-resize",
+  "size_bdiag",
+]
+
+[cursors.hand1]
+x_hotspot = 144
+y_hotspot = 90
+symlinks = ["grab", "openhand"]
+flips = 1
+
+[cursors.hand2]
+x_hotspot = 117
+y_hotspot = 36
+symlinks = [
+  "pointer",
+  "pointing_hand",
+]
+flips = 1
+
+[cursors.left_ptr]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = ["arrow", "default", "top_left_arrow"]
+flips = 1
+
+[cursors.left_ptr_watch]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = [
+  "progress",
+]
+animated = 1
+anim_delay = 10
+flips = 1
+
+[cursors.left_side]
+x_hotspot = 44
+y_hotspot = 128
+
+[cursors.link]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = [
+  "alias",
+  "dnd-link",
+]
+flips = 1
+
+[cursors.move]
+x_hotspot = 141
+y_hotspot = 79
+symlinks = [
+  "grabbing",
+  "pointer_move",
+  "dnd-move",
+  "closedhand",
+  "dnd-none",
+]
+flips = 1
+
+[cursors.pencil]
+x_hotspot = 40
+y_hotspot = 210
+symlinks = ["draft"]
+flips = 1
+
+[cursors.pirate]
+
+[cursors.plus]
+symlinks = ["cell"]
+
+[cursors.question_arrow]
+x_hotspot = 69
+y_hotspot = 30
+symlinks = [
+  "help",
+  "left_ptr_help",
+  "whats_this",
+  "dnd-ask",
+]
+flips = 1
+
+[cursors.right_ptr]
+x_hotspot = 181
+y_hotspot = 30
+symlinks = ["draft_large", "draft_small"]
+flips = 1
+
+[cursors.right_side]
+x_hotspot = 211
+y_hotspot = 128
+
+[cursors.row-resize]
+symlinks = ["split_v"]
+
+[cursors.sb_down_arrow]
+x_hotspot = 129
+y_hotspot = 222
+symlinks = ["down-arrow"]
+
+[cursors.sb_h_double_arrow]
+x_hotspot = 127
+y_hotspot = 125
+symlinks = [
+  "e-resize",
+  "ew-resize",
+  "h_double_arrow",
+  "size-hor",
+  "size_hor",
+  "w-resize",
+]
+
+[cursors.sb_left_arrow]
+x_hotspot = 35
+y_hotspot = 128
+symlinks = ["left-arrow"]
+
+[cursors.sb_right_arrow]
+x_hotspot = 222
+y_hotspot = 128
+symlinks = ["right-arrow"]
+
+[cursors.sb_up_arrow]
+x_hotspot = 128
+y_hotspot = 36
+symlinks = ["up-arrow"]
+
+[cursors.sb_v_double_arrow]
+x_hotspot = 126
+y_hotspot = 125
+symlinks = [
+  "double_arrow",
+  "n-resize",
+  "ns-resize",
+  "size-ver",
+  "size_ver",
+  "s-resize",
+  "v_double_arrow",
+]
+
+[cursors.top_left_corner]
+x_hotspot = 61
+y_hotspot = 67
+
+[cursors.top_right_corner]
+x_hotspot = 189
+y_hotspot = 65
+
+[cursors.top_side]
+x_hotspot = 128
+y_hotspot = 43
+
+[cursors.vertical-text]
+
+[cursors.wait]
+symlinks = ["watch"]
+animated = 1
+anim_delay = 10
+flips = 1
+
+[cursors.wayland-cursor]
+
+[cursors.X_cursor]
+symlinks = ["x-cursor"]
+
+[cursors.xterm]
+symlinks = ["ibeam", "text"]
+
+[cursors.zoom-in]
+x_hotspot = 109
+y_hotspot = 103
+flips = 1
+
+[cursors.zoom-out]
+x_hotspot = 109
+y_hotspot = 103
+flips = 1
