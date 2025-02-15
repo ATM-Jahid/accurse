@@ -1,0 +1,298 @@
+[theme]
+name = "Bibata"
+description = "Bibata for lefties"
+version = "0.1"
+author = "ATM Jahid Hasan"
+
+[config]
+shape_size = 256
+x_hotspot = 128
+y_hotspot = 128
+old_substr = ["#00FF00", "#0000FF", "#FF0000"]
+new_substr = ["#008B8B", "#FFFFFF", "#000000"]
+mirror = 1
+xcur_sizes = [24, 32, 40, 48, 56, 64, 72]
+cleanup = ["hycur", "xcur"]
+
+[cursors]
+[cursors.bd_double_arrow]
+symlinks = ["nwse-resize", "size_fdiag"]
+
+[cursors.bottom_left_corner]
+x_hotspot = 26
+y_hotspot = 232
+symlinks = ["sw-resize"]
+
+[cursors.bottom_right_corner]
+x_hotspot = 229
+y_hotspot = 232
+symlinks = ["se-resize"]
+
+[cursors.bottom_side]
+x_hotspot = 129
+y_hotspot = 234
+symlinks = ["s-resize"]
+
+[cursors.bottom_tee]
+x_hotspot = 128
+y_hotspot = 230
+
+[cursors.center_ptr]
+x_hotspot = 127
+y_hotspot = 17
+
+[cursors.circle]
+x_hotspot = 55
+y_hotspot = 17
+symlinks = ["forbidden"]
+flips = 1
+
+[cursors.context-menu]
+x_hotspot = 57
+y_hotspot = 17
+flips = 1
+
+[cursors.copy]
+x_hotspot = 55
+y_hotspot = 17
+flips = 1
+
+[cursors.cross]
+symlinks = ["cross_reverse", "diamond_cross"]
+
+[cursors.crossed_circle]
+symlinks = ["not-allowed"]
+
+[cursors.crosshair]
+
+[cursors.dnd_no_drop]
+x_hotspot = 100
+y_hotspot = 65
+symlinks = ["no-drop"]
+flips = 1
+
+[cursors.dnd-ask]
+x_hotspot = 100
+y_hotspot = 65
+flips = 1
+
+[cursors.dnd-copy]
+x_hotspot = 100
+y_hotspot = 65
+flips = 1
+
+[cursors.dnd-link]
+x_hotspot = 100
+y_hotspot = 65
+symlinks = ["alias"]
+flips = 1
+
+[cursors.dotbox]
+symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
+
+[cursors.fd_double_arrow]
+symlinks = ["nesw-resize", "size_bdiag"]
+
+[cursors.grabbing]
+x_hotspot = 128
+y_hotspot = 66
+symlinks = [
+  "closedhand",
+  "dnd-move",
+  "dnd-none",
+]
+flips = 1
+
+[cursors.hand1]
+x_hotspot = 144
+y_hotspot = 79
+symlinks = ["grab", "openhand"]
+flips = 1
+
+[cursors.hand2]
+x_hotspot = 114
+y_hotspot = 18
+symlinks = [
+  "pointer",
+  "pointing_hand"
+]
+flips = 1
+
+[cursors.left_ptr]
+x_hotspot = 55
+y_hotspot = 17
+symlinks = ["arrow", "default", "top_left_arrow"]
+flips = 1
+
+[cursors.left_ptr_watch]
+x_hotspot = 55
+y_hotspot = 17
+symlinks = [
+  "progress"
+]
+animated = 1
+anim_delay = 25
+flips = 1
+
+[cursors.left_side]
+x_hotspot = 21
+y_hotspot = 128
+symlinks = ["w-resize"]
+
+[cursors.left_tee]
+x_hotspot = 230
+y_hotspot = 128
+
+[cursors.link]
+x_hotspot = 55
+y_hotspot = 17
+flips = 1
+
+[cursors.ll_angle]
+x_hotspot = 30
+y_hotspot = 223
+
+[cursors.lr_angle]
+x_hotspot = 224
+y_hotspot = 230
+
+[cursors.move]
+symlinks = [
+  "all-scroll",
+  "fleur",
+  "size_all"
+]
+
+[cursors.pencil]
+x_hotspot = 46
+y_hotspot = 211
+symlinks = ["draft"]
+flips = 1
+
+[cursors.plus]
+symlinks = ["cell"]
+
+[cursors.pointer-move]
+x_hotspot = 55
+y_hotspot = 17
+
+[cursors.question_arrow]
+x_hotspot = 42
+y_hotspot = 86
+symlinks = [
+  "help",
+  "left_ptr_help",
+  "whats_this",
+]
+
+[cursors.right_ptr]
+x_hotspot = 204
+y_hotspot = 17
+symlinks = ["draft_large", "draft_small"]
+flips = 1
+
+[cursors.right_side]
+x_hotspot = 233
+y_hotspot = 128
+symlinks = ["e-resize"]
+
+[cursors.right_tee]
+x_hotspot = 29
+y_hotspot = 128
+
+[cursors.sb_down_arrow]
+x_hotspot = 128
+y_hotspot = 222
+symlinks = ["down-arrow"]
+
+[cursors.sb_h_double_arrow]
+symlinks = [
+  "col-resize",
+  "ew-resize",
+  "h_double_arrow",
+  "size-hor",
+  "size_hor",
+  "split_h",
+]
+
+[cursors.sb_left_arrow]
+x_hotspot = 33
+y_hotspot = 128
+symlinks = ["left-arrow"]
+
+[cursors.sb_right_arrow]
+x_hotspot = 223
+y_hotspot = 128
+symlinks = ["right-arrow"]
+
+[cursors.sb_up_arrow]
+x_hotspot = 128
+y_hotspot = 33
+symlinks = ["up-arrow"]
+
+[cursors.sb_v_double_arrow]
+symlinks = [
+  "double_arrow",
+  "ns-resize",
+  "row-resize",
+  "size-ver",
+  "size_ver",
+  "split_v",
+  "v_double_arrow",
+]
+
+[cursors.tcross]
+symlinks = ["color-picker"]
+
+[cursors.top_left_corner]
+x_hotspot = 29
+y_hotspot = 24
+symlinks = ["nw-resize"]
+
+[cursors.top_right_corner]
+x_hotspot = 229
+y_hotspot = 24
+symlinks = ["ne-resize"]
+
+[cursors.top_side]
+x_hotspot = 128
+y_hotspot = 23
+symlinks = ["n-resize"]
+
+[cursors.top_tee]
+x_hotspot = 128
+y_hotspot = 27
+
+[cursors.ul_angle]
+x_hotspot = 33
+y_hotspot = 33
+
+[cursors.ur_angle]
+x_hotspot = 225
+y_hotspot = 33
+
+[cursors.vertical-text]
+
+[cursors.wait]
+symlinks = ["watch"]
+animated = 1
+anim_delay = 25
+flips = 1
+
+[cursors.wayland-cursor]
+
+[cursors.X_cursor]
+symlinks = ["pirate", "x-cursor"]
+
+[cursors.xterm]
+symlinks = ["ibeam", "text"]
+
+[cursors.zoom-in]
+x_hotspot = 116
+y_hotspot = 116
+flips = 1
+
+[cursors.zoom-out]
+x_hotspot = 116
+y_hotspot = 116
+flips = 1
