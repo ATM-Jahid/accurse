@@ -26,7 +26,7 @@ def rescale_svg(file: Path, shape_size: int) -> bool:
 
     tree.write(file,
                pretty_print=True,
-               xml_declaration=True,
+               xml_declaration=False,
                encoding='utf-8')
 
     return True

@@ -15,7 +15,7 @@ def fix_svg_dims(svg_path):
 
     tree.write(svg_path,
                pretty_print=True,
-               xml_declaration=True,
+               xml_declaration=False,
                encoding='utf-8')
 
 def process_svgs(directory):
