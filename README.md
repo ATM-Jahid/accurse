@@ -4,6 +4,13 @@ Atomsky's cursor packager
 ## Why?
 Theming cursors for different standards is a curse. `accurse` alleviates the
 curse by allowing you to package hyprcursor and xcursor in a manageable way.
+`accurse` can
+- package hyprcursor and xcursor from SVG assets,
+- recolor cursor shapes using string replacements,
+- flip (mirror) shapes horizontally to make left-handed versions,
+- compute consistent hotspots after rescaling and mirroring,
+- compile xcursor themes for any given list of sizes,
+- and do all of this with minimal dependencies.
 
 ## Installation
 `accurse` is a python package. You can install it using `pip install accurse`.
@@ -23,7 +30,7 @@ specification is provided in the next section. If you have an assets directory,
 the `metadata.toml` file should be in that directory. For example, if there are
 SVG cursor files in the `assets/Bibata` directory (or its subdirectories) along
 with `metadata.toml`, the following command creates packaged Bibata cursors
-(both xcursor and hycursor) in `assets/AC-Bibata`.
+(both hyprcursor and xcursor) in `assets/AC-Bibata`.
 
 ```
 accurse assets/Bibata/metadata.toml
@@ -72,6 +79,11 @@ what `accurse` looks for in the metadata file.
 | animated   | boolean         | whether it's animated             |
 | anim_delay | number          | delay between frames (ms)         |
 | flips      | boolean         | whether to flip shape if mirror=1 |
+
+## Examples
+Look into the `assets` directory for a few ready to use cursor themes. Simply
+modify the provided `metadata.toml` files in the theme subdirectories and run
+`accurse` on them to generate your own custom themes.
 
 ## License
 Copyright (C) 2025 ATM Jahid Hasan<br>

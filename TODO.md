@@ -1,3 +1,5 @@
 # TODO
-- Check integrity of given metadata.toml
-- Add more asset examples
+- Improve README
+- Add more cursor themes
+- Show visual examples
+- Implement check_integrity
