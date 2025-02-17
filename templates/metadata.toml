@@ -175,6 +175,7 @@ symlinks = ["cell"]
 [cursors.pointer-move]
 x_hotspot = 55
 y_hotspot = 17
+flips = 1
 
 [cursors.question_arrow]
 x_hotspot = 42

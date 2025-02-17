@@ -63,6 +63,7 @@ symlinks = [
 x_hotspot = 2
 y_hotspot = 30
 symlinks = ["tcross"]
+flips = 1
 
 [cursors.context-menu]
 x_hotspot = 6
@@ -118,6 +119,7 @@ symlinks = [
   "left_ptr_help",
   "whats_this",
 ]
+flips = 1
 
 [cursors.left-arrow]
 x_hotspot = 9
@@ -136,6 +138,7 @@ flips = 1
 
 [cursors.not-allowed]
 symlinks = ["crossed_circle"]
+flips = 1
 
 [cursors.openhand]
 x_hotspot = 16

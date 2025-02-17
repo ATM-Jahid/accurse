@@ -80,6 +80,7 @@ symlinks = [
   "dnd-no-drop",
   "no-drop",
 ]
+flips = 1
 
 [cursors.dotbox]
 symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
