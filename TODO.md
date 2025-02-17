@@ -1,5 +1,5 @@
 # TODO
 - Improve README
-- Add more cursor themes
 - Show visual examples
+- Expose colors from themes
 - Implement check_integrity
