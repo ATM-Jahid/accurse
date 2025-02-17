@@ -83,7 +83,10 @@ what `accurse` looks for in the metadata file.
 ## Examples
 Look into the `assets` directory for a few ready to use cursor themes. Simply
 modify the provided `metadata.toml` files in the theme subdirectories and run
-`accurse` on them to generate your own custom themes.
+`accurse` on them to generate your own custom themes. Here's a glimpse of what
+is possible:
+
+![Cursor Showcase](assets/showcase.svg)
 
 ## License
 Copyright (C) 2025 ATM Jahid Hasan<br>
