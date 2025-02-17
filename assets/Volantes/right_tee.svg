@@ -5,5 +5,6 @@
     </filter>
   </defs>
   <path d="M6.5 16.5a1 1 0 0 0 1 1h15v7a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-17a1 1 0 0 0-1-1h-1a1 1 0 0 0-1 1v7h-15a1 1 0 0 0-1 1z" style="color:#000;fill:#000;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;filter:url(#a);opacity:.2"/>
+  <path d="m 6,16 a -1.0001,1.0001 0 0 0 1,1 h 15 v 7 a -1.0001,1.0001 0 0 0 1,1 h 1 a -1.0001,1.0001 0 0 0 1,-1 V 16 15 7 A -1.0001,1.0001 0 0 0 24,6 h -1 a -1.0001,1.0001 0 0 0 -1,1 v 7 H 7 a -1.0001,1.0001 0 0 0 -1,1 z" style="color:#000000;fill:#efefef;fill-opacity:1;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none"/>
   <path d="M7 16h16v8h1V7h-1v8H7Z" style="fill:#232627;fill-opacity:1;stroke:none;stroke-width:2.04939;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"/>
 </svg>
