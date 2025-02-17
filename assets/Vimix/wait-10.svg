@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="1.24" height="1.24" x="-.12" y="-.12" style="color-interpolation-filters:sRGB">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+  </defs>
+  <path d="M16 1026.362a11 11 0 0 0-11 11 11 11 0 0 0 11 11 11 11 0 0 0 11-11 11 11 0 0 0-11-11m0 4a7 7 0 0 1 7 7 7 7 0 0 1-7 7 7 7 0 0 1-7-7 7 7 0 0 1 7-7" style="opacity:.35;fill:#000;fill-opacity:1;stroke:none;stroke-width:2.4444406;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers;filter:url(#a)" transform="translate(0 -1020.362)"/>
+  <path d="M56 5a11 11 0 0 0-11 11h4a7 7 0 0 1 7-7z" style="opacity:1;fill:#ffc107;fill-opacity:1;stroke:none;stroke-width:1.76000011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(-165 36 18.633)"/>
+  <path d="M56 5v4a7 7 0 0 1 7 7h4A11 11 0 0 0 56 5" style="opacity:1;fill:#ff3d00;fill-opacity:1;stroke:none;stroke-width:1.76000011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(-165 36 18.633)"/>
+  <path d="M45 16a11 11 0 0 0 11 11v-4a7 7 0 0 1-7-7Z" style="opacity:1;fill:#4caf50;fill-opacity:1;stroke:none;stroke-width:1.76000011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(-165 36 18.633)"/>
+  <path d="M63 16a7 7 0 0 1-7 7v4a11 11 0 0 0 11-11Z" style="opacity:1;fill:#1976d2;fill-opacity:1;stroke:none;stroke-width:1.76000011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers" transform="rotate(-165 36 18.633)"/>
+</svg>

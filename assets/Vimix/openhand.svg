@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="1.244" height="1.236" x="-.122" y="-.118" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".886"/>
+    </filter>
+  </defs>
+  <path d="M17 6.06c-1.09 0-2 .91-2 2v.42c-.309-.197-.613-.42-1-.42-1.09 0-2 .91-2 2v7.172l-.576-.576a2 2 0 0 0-1.434-.606h-.002a2 2 0 0 0-1.613.824l.101-.119-.597.598a1 1 0 0 0 .002 1.416l.658.656q.028.03.057.059l3.697 3.697.28.28a2 2 0 0 0 1.773.585l-.166.014H23c1.091 0 2.045-.902 2-2.039V11.06c0-1.09-.91-2-2-2-.387 0-.691.223-1 .42v-.42c0-1.09-.91-2-2-2-.468 0-.864.231-1.207.508-.17-.575-.535-.973-1.08-1.21A1 1 0 0 0 17 6.06" style="color:#000;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;white-space:normal;opacity:.35;isolation:auto;mix-blend-mode:normal;solid-color:#000;filter:url(#a);color-rendering:auto;image-rendering:auto;shape-rendering:auto;enable-background:new"/>
+  <path d="M16 6.06c-.554 0-1 .446-1 1v6h-1v-4c0-.554-.446-1-1-1s-1 .446-1 1v9.586l-2.293-2.293a1 1 0 0 0-1.523.11l-.598.597.658.656q.024.027.049.051l4 4a1 1 0 0 0 .887.293H21c2 0 2-2 2-2v-10c0-.554-.446-1-1-1s-1 .446-1 1v3h-1v-5c0-.554-.446-1-1-1s-1 .446-1 1v5h-1v-6c0-.554-.446-1-1-1" style="fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;enable-background:new"/>
+  <path d="M16 6.06c-.554 0-1 .446-1 1v6h-1v-4c0-.554-.446-1-1-1s-1 .446-1 1v9.586l-2.293-2.293a1 1 0 0 0-1.523.11l-.598.597.658.656q.024.027.049.051l4 4a1 1 0 0 0 .887.293H21c2 0 2-2 2-2v-10c0-.554-.446-1-1-1s-1 .446-1 1v3h-1v-5c0-.554-.446-1-1-1s-1 .446-1 1v5h-1v-6c0-.554-.446-1-1-1" style="fill:#333;enable-background:new"/>
+  <path d="M4 4.06h24v24H4z" style="opacity:.2;fill:none"/>
+</svg>

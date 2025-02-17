@@ -30,7 +30,7 @@ se-resize = lr_angle; bottom_right_corner
 sw-resize = ll_angle; bottom_left_corner
 ew-resize = h_double_arrow; sb_h_double_arrow; size_hor
 ns-resize = v_double_arrow; sb_v_double_arrow; size_ver
-nesw-resize = fd_double_arrow; size_fdiag
-nwse-resize = bd_double_arrow; size_bdiag
+nesw-resize = fd_double_arrow; size_bdiag
+nwse-resize = bd_double_arrow; size_fdiag
 zoom-in
 zoom-out
