@@ -197,10 +197,10 @@ symlinks = [
 ]
 
 [cursors.size_bdiag]
-symlinks = ["nwse-resize", "bd_double_arrow"]
+symlinks = ["nesw-resize", "fd_double_arrow",]
 
 [cursors.size_fdiag]
-symlinks = ["nesw-resize", "fd_double_arrow",]
+symlinks = ["nwse-resize", "bd_double_arrow"]
 
 [cursors.text]
 symlinks = ["ibeam", "xterm"]

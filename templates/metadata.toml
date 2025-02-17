@@ -16,7 +16,7 @@ cleanup = ["hycur", "xcur"]
 
 [cursors]
 [cursors.bd_double_arrow]
-symlinks = ["nwse-resize", "size_bdiag"]
+symlinks = ["nwse-resize", "size_fdiag"]
 
 [cursors.bottom_left_corner]
 x_hotspot = 26
@@ -91,7 +91,7 @@ flips = 1
 symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
-symlinks = ["nesw-resize", "size_fdiag"]
+symlinks = ["nesw-resize", "size_bdiag"]
 
 [cursors.grabbing]
 x_hotspot = 128
