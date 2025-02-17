@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="1.24" height="1.24" x="-.12" y="-.12" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+  </defs>
+  <path d="M16 12a2.96 2.96 0 1 0 0 5.92A2.96 2.96 0 1 0 16 12" style="fill:#151515;fill-opacity:1"/>
+  <path d="M16.027 5a1 1 0 0 0-.828.4l-3 4a1 1 0 0 0 .8 1.6h6a1 1 0 0 0 .801-1.6l-3-4a1 1 0 0 0-.773-.4M16 7.668 17 9h-2zM9.97 12a1 1 0 0 0-.57.2l-4 3a1 1 0 0 0 0 1.6l4 3A1 1 0 0 0 11 19v-6a1 1 0 0 0-1.03-1m11.973.002A1 1 0 0 0 21 13v6a1 1 0 0 0 1.6.8l4-3a1 1 0 0 0 0-1.6l-4-3a1 1 0 0 0-.657-.198M16 13a2.96 2.96 0 1 0 0 5.919 2.96 2.96 0 0 0 0-5.919m-7 2v2l-1.332-1zm14 0 1.332 1L23 17zm-10 6a1 1 0 0 0-.8 1.6l3 4a1 1 0 0 0 1.6 0l3-4A1 1 0 0 0 19 21zm2 2h2l-1 1.332z" color="#000" filter="url(#a)" opacity=".35" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+  <path d="M16.027 4a1 1 0 0 0-.828.4l-3 4A1 1 0 0 0 13 10h6a1 1 0 0 0 .8-1.6l-3-4a1 1 0 0 0-.773-.4M16 6.668 17 8h-2zM9.97 11a1 1 0 0 0-.57.2l-4 3a1 1 0 0 0 0 1.6l4 3A1 1 0 0 0 11 18v-6a1 1 0 0 0-1.03-1m12 0-.027.002A1 1 0 0 0 21 12v6a1 1 0 0 0 1.6.8l4-3a1 1 0 0 0 0-1.6l-4-3a1 1 0 0 0-.63-.2M9 14v2l-1.332-1zm14 0 1.332 1L23 16zm-10 6a1 1 0 0 0-.8 1.6l3 4a1 1 0 0 0 1.6 0l3-4A1 1 0 0 0 19 20zm2 2h2l-1 1.332z" style="fill:#151515;fill-opacity:1;stroke-width:1.94746"/>
+  <path d="m16 5-3 4h6zm-6 7-4 3 4 3zm12 0v6l4-3zm-9 9 3 4 3-4z" style="fill:#fff;fill-opacity:1"/>
+  <path d="M16 12.96a2 2 0 1 0 0 4 2 2 0 0 0 0-4" style="fill:#ffb900;fill-opacity:1"/>
+</svg>

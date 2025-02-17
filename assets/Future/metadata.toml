@@ -1,0 +1,249 @@
+[theme]
+name = "Future"
+description = "Accursed Future cursor theme"
+version = "0.1"
+author = "ATM Jahid Hasan"
+
+[config]
+shape_size = 32
+x_hotspot = 16
+y_hotspot = 16
+old_substr = ["#ffb900", "#ffba00", "#f67400"]
+new_substr = ["#008b8b", "#008b8b", "#008b8b"]
+mirror = 0
+xcur_sizes = [30, 40, 50, 60, 70, 80]
+cleanup = ["hycur", "xcur"]
+
+[cursors]
+[cursors.alias]
+x_hotspot = 6
+y_hotspot = 4
+symlinks = ["dnd-link"]
+flips = 1
+
+[cursors.all-scroll]
+symlinks = [
+  "move",
+  "size_all"
+]
+
+[cursors.bottom_left_corner]
+x_hotspot = 4
+y_hotspot = 28
+symlinks = ["sw-resize"]
+
+[cursors.bottom_right_corner]
+x_hotspot = 30
+y_hotspot = 28
+symlinks = ["se-resize"]
+
+[cursors.bottom_side]
+x_hotspot = 16
+y_hotspot = 27
+symlinks = ["s-resize"]
+
+[cursors.cell]
+symlinks = ["plus"]
+
+[cursors.center_ptr]
+x_hotspot = 15
+y_hotspot = 6
+
+[cursors.col-resize]
+symlinks = [
+  "sb_h_double_arrow",
+  "ew-resize",
+  "h_double_arrow",
+  "size-hor",
+  "size_hor",
+  "split_h",
+]
+
+[cursors.color-picker]
+x_hotspot = 2
+y_hotspot = 30
+symlinks = ["tcross"]
+
+[cursors.context-menu]
+x_hotspot = 6
+y_hotspot = 4
+flips = 1
+
+[cursors.copy]
+x_hotspot = 6
+y_hotspot = 4
+flips = 1
+
+[cursors.crosshair]
+
+[cursors.default]
+x_hotspot = 6
+y_hotspot = 4
+symlinks = ["arrow", "left_ptr", "top_left_arrow"]
+flips = 1
+
+[cursors.dnd-move]
+x_hotspot = 16
+y_hotspot = 13
+symlinks = [
+  "closedhand",
+  "grabbing",
+  "dnd-none",
+]
+flips = 1
+
+[cursors.dnd-no-drop]
+x_hotspot = 16
+y_hotspot = 13
+symlinks = ["dnd_no_drop"]
+flips = 1
+
+[cursors.down-arrow]
+x_hotspot = 16
+y_hotspot = 22
+symlinks = ["sb_down_arrow"]
+
+[cursors.draft]
+x_hotspot = 3
+y_hotspot = 29
+flips = 1
+
+[cursors.fleur]
+
+[cursors.help]
+x_hotspot = 6
+y_hotspot = 4
+symlinks = [
+  "question_arrow",
+  "left_ptr_help",
+  "whats_this",
+]
+
+[cursors.left-arrow]
+x_hotspot = 9
+y_hotspot = 15
+symlinks = ["sb_left_arrow"]
+
+[cursors.left_side]
+x_hotspot = 5
+y_hotspot = 16
+symlinks = ["w-resize"]
+
+[cursors.no-drop]
+x_hotspot = 6
+y_hotspot = 4
+flips = 1
+
+[cursors.not-allowed]
+symlinks = ["crossed_circle"]
+
+[cursors.openhand]
+x_hotspot = 16
+y_hotspot = 14
+symlinks = ["grab", "hand1"]
+flips = 1
+
+[cursors.pencil]
+x_hotspot = 2
+y_hotspot = 30
+flips = 1
+
+[cursors.pirate]
+
+[cursors.pointer]
+x_hotspot = 13
+y_hotspot = 6
+symlinks = [
+  "hand2",
+  "pointing_hand"
+]
+flips = 1
+
+[cursors.progress]
+x_hotspot = 6
+y_hotspot = 4
+symlinks = [
+  "left_ptr_watch"
+]
+animated = 1
+anim_delay = 25
+flips = 1
+
+[cursors.right-arrow]
+x_hotspot = 23
+y_hotspot = 15
+symlinks = ["sb_right_arrow"]
+
+[cursors.right_ptr]
+x_hotspot = 28
+y_hotspot = 4
+symlinks = ["draft_large", "draft_small"]
+flips = 1
+
+[cursors.right_side]
+x_hotspot = 27
+y_hotspot = 16
+symlinks = ["e-resize"]
+
+[cursors.row-resize]
+symlinks = [
+  "double_arrow",
+  "ns-resize",
+  "sb_v_double_arrow",
+  "size-ver",
+  "size_ver",
+  "split_v",
+  "v_double_arrow",
+]
+
+[cursors.size_bdiag]
+symlinks = ["nwse-resize", "bd_double_arrow"]
+
+[cursors.size_fdiag]
+symlinks = ["nesw-resize", "fd_double_arrow",]
+
+[cursors.text]
+symlinks = ["ibeam", "xterm"]
+
+[cursors.top_left_corner]
+x_hotspot = 8
+y_hotspot = 8
+symlinks = ["nw-resize"]
+
+[cursors.top_right_corner]
+x_hotspot = 22
+y_hotspot = 8
+symlinks = ["ne-resize"]
+
+[cursors.top_side]
+x_hotspot = 16
+y_hotspot = 5
+symlinks = ["n-resize"]
+
+[cursors.up-arrow]
+x_hotspot = 16
+y_hotspot = 8
+symlinks = ["sb_up_arrow"]
+
+[cursors.vertical-text]
+
+[cursors.wait]
+symlinks = ["watch"]
+animated = 1
+anim_delay = 25
+flips = 1
+
+[cursors.wayland-cursor]
+
+[cursors.x-cursor]
+symlinks = ["X_cursor"]
+
+[cursors.zoom-in]
+x_hotspot = 15
+y_hotspot = 15
+flips = 1
+
+[cursors.zoom-out]
+x_hotspot = 15
+y_hotspot = 15
+flips = 1

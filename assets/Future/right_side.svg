@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="2.116" height="1.248" x="-.558" y="-.124" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+    <filter id="d" width="1.314" height="1.318" x="-.157" y="-.159" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+    <filter id="c" width="2.116" height="1.248" x="-.558" y="-.124" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+    <filter id="e" width="1.314" height="1.318" x="-.157" y="-.159" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+  </defs>
+  <g color="#000">
+    <path d="M6 25.96a1 1 0 0 0 1-1v-16a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1z" filter="url(#a)" opacity=".35" style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;filter:url(#c)" transform="matrix(-1 0 0 1 32 0)"/>
+    <path d="M22.211 15.96a1 1 0 0 0-1.002-1l-6.04.016 1.923-1.922a1 1 0 0 0 0-1.414l-1.385-1.387a1 1 0 0 0-1.414 0l-6.002 6a1 1 0 0 0-.002 1.412l6 6.041a1 1 0 0 0 1.418.002l1.385-1.385a1 1 0 0 0 0-1.416l-1.934-1.931 6.055-.016a1 1 0 0 0 .998-1zm-9.463 1.022a1 1 0 0 0-.902 1.425l-1.436-1.445 1.465-1.465a1 1 0 0 0 .873 1.485" enable-background="new" filter="url(#d)" opacity=".35" style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;filter:url(#e)" transform="matrix(-1 0 0 1 32 0)"/>
+    <path fill="#151515" d="M6 25a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1z" style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers" transform="matrix(-1 0 0 1 32 0)"/>
+  </g>
+  <g fill="#151515">
+    <path fill="#fff" d="M-6-24h2v16h-2z" style="paint-order:stroke fill markers" transform="matrix(1 0 0 -1 32 0)"/>
+    <path stroke="#151515" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m16.999 10-1.385 1.386 3.635 3.635L10.787 15v2l8.462.02-3.635 3.635 1.385 1.385 6-6.04z" enable-background="new"/>
+    <path fill="#fff" d="m16.999 10-1.385 1.386 3.635 3.635L10.787 15v2l8.462.02-3.635 3.635 1.385 1.385 6-6.04z" enable-background="new"/>
+  </g>
+</svg>

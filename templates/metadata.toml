@@ -1,6 +1,6 @@
 [theme]
 name = "Bibata"
-description = "Bibata for lefties"
+description = "Accursed Bibata for lefties"
 version = "0.1"
 author = "ATM Jahid Hasan"
 
@@ -16,7 +16,7 @@ cleanup = ["hycur", "xcur"]
 
 [cursors]
 [cursors.bd_double_arrow]
-symlinks = ["nwse-resize", "size_fdiag"]
+symlinks = ["nwse-resize", "size_bdiag"]
 
 [cursors.bottom_left_corner]
 x_hotspot = 26
@@ -91,7 +91,7 @@ flips = 1
 symlinks = ["dot_box_mask", "draped_box", "icon", "target"]
 
 [cursors.fd_double_arrow]
-symlinks = ["nesw-resize", "size_bdiag"]
+symlinks = ["nesw-resize", "size_fdiag"]
 
 [cursors.grabbing]
 x_hotspot = 128

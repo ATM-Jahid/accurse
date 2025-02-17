@@ -1,18 +1,18 @@
 [theme]
-name = 'Breeze'
-description = 'Extended Breeze cursor theme'
-version = '0.1'
-author = 'ATM Jahid Hasan'
+name = "Breeze"
+description = "Accursed Breeze cursor theme"
+version = "0.1"
+author = "ATM Jahid Hasan"
 
 [config]
 shape_size = 256
 x_hotspot = 128
 y_hotspot = 128
-old_substr = ['#00FF00', '#0000FF']
-new_substr = ['#4D4D4D', '#FFFFFF']
+old_substr = ["#00FF00", "#0000FF"]
+new_substr = ["#4D4D4D", "#FFFFFF"]
 mirror = 0
 xcur_sizes = [32, 40, 48, 56, 64]
-cleanup = ['hycur', 'xcur']
+cleanup = ["hycur", "xcur"]
 
 [cursors]
 [cursors.all-scroll]

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="1.248" height="2.116" x="-.124" y="-.558" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+    <filter id="c" width="1.318" height="1.314" x="-.159" y="-.157" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".93"/>
+    </filter>
+  </defs>
+  <path d="M8 25a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zM15 9.787a1 1 0 0 0-1 1.002l.016 6.04-1.922-1.923a1 1 0 0 0-1.414 0l-1.387 1.385a1 1 0 0 0 0 1.416l6 6a1 1 0 0 0 1.412.002l6.04-6a1 1 0 0 0 .003-1.416l-1.387-1.387a1 1 0 0 0-1.414 0l-1.931 1.934L18 10.785a1 1 0 0 0-1-.998zm1.021 9.465a1 1 0 0 0 1.426.9l-1.445 1.436-1.467-1.467a1 1 0 0 0 1.486-.869" style="opacity:1;fill:#151515;fill-opacity:1;stroke:none;stroke-width:3"/>
+  <g color="#000">
+    <path d="M25 27a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1z" filter="url(#a)" opacity=".35" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-padding:0;text-decoration-color:#000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+    <path d="M15 10.787a1 1 0 0 0-1 1.002l.016 6.04-1.922-1.923a1 1 0 0 0-1.414 0l-1.387 1.385a1 1 0 0 0 0 1.416l6 6a1 1 0 0 0 1.412.002l6.04-6a1 1 0 0 0 .003-1.416l-1.387-1.387a1 1 0 0 0-1.414 0l-1.931 1.934L18 11.785a1 1 0 0 0-1-.998zm1.022 9.465a1 1 0 0 0 1.425.9l-1.445 1.436-1.467-1.467a1 1 0 0 0 1.486-.87" enable-background="new" filter="url(#c)" opacity=".35" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+  </g>
+  <path d="m15 10.787.021 8.461-3.634-3.635L10 16.998 16 23l6.041-6.002-1.387-1.385-3.633 3.635-.021-8.46zM8 26v2h16v-2z" style="opacity:1;fill:#fff;fill-opacity:1;stroke:none;stroke-width:3"/>
+</svg>

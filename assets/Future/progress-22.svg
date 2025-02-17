@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <filter id="a" width="1.258" height="1.186" x="-.129" y="-.093" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation=".674"/>
+    </filter>
+  </defs>
+  <path fill="#151515" d="M-13.694 5.65a2.3 2.3 0 0 0-.396.041l-.016.002-.016.004c-.817.212-1.341.803-1.595 1.446-.255.643-.295 1.343-.295 1.966v10.598l.002-.045s-.063.582.173 1.198c.237.616.891 1.297 1.993 1.314.624.01 1.155-.29 1.58-.672q.003-.004.008-.01c.029.018.053.04.084.055l2.472 1.274a2.067 2.067 0 0 0 2.776-.887l1.273-2.473c.077-.15.128-.304.166-.46.418-.05.839-.195 1.188-.505.382-.34.709-.803.802-1.377.094-.573-.07-1.224-.531-1.85-.393-.532-1.922-2.328-3.404-4.062s-2.88-3.353-2.88-3.353l-.005-.006-.006-.008c-.862-.93-1.498-1.502-2.088-1.84a2.5 2.5 0 0 0-1.285-.35z" color="#000" filter="url(#a)" opacity=".35" style="font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal" transform="translate(21.394 -.467)"/>
+  <g stroke="#151515" transform="translate(23.54 .97)">
+    <rect width="5.902" height="5.902" x="-5.949" y="17.155" fill="#ffb900" ry="1.56" transform="rotate(27.27)"/>
+    <path fill="#fff" d="M-16.518 3.562c-1.328.344-1.517 1.735-1.517 2.927v10.598s-.178 1.938 1.676 1.967 2.77-3.532 4.26-3.753c1.491-.221 3.713 1.297 4.947.202.64-.567 1.002-1.47.201-2.556-.67-.91-6.26-7.386-6.26-7.386-1.693-1.83-2.456-2.165-3.307-1.999z"/>
+  </g>
+  <path fill="none" d="M-.936 1h24v24h-24z" opacity=".2"/>
+  <g style="fill:#ffba00;fill-opacity:1">
+    <path d="m56.828 1030.388 13-8.5 13 8.5-13 8.5z" style="opacity:1;fill:#ffba00;fill-opacity:1;stroke-width:2.98558" transform="matrix(.11 0 0 .11 9.832 -90.644)"/>
+    <g style="fill:#ffba00;fill-opacity:1">
+      <path d="M32.256 1030.388h13v13h-13zM45.256 1030.388h13v13h-13z" style="fill:#ffba00;fill-opacity:1;stroke-width:3.1048" transform="matrix(.11 0 0 .11 12.535 -90.644)"/>
+    </g>
+    <path d="m56.828 1043.388 13 8.5 13-8.5-13-8.5z" style="opacity:1;fill:#ffba00;fill-opacity:1;stroke-width:2.98558" transform="matrix(.11 0 0 .11 9.832 -90.644)"/>
+  </g>
+</svg>
