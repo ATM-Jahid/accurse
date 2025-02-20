@@ -1,5 +1,4 @@
 # TODO
-- Example script for PNG to SVG
 - Implement check_integrity
 - README can be better
 - Recheck Bibata & Breeze hotspots
