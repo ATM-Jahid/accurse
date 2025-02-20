@@ -65,7 +65,7 @@ what `accurse` looks for in the metadata file.
 | y_hotspot  | number          | default hotspot y-coordinate         |
 | old_substr | list of strings | target substrings                    |
 | new_substr | list of strings | replacement substrings               |
-| mirror     | boolean         | mirror shapes with flip=1 flag       |
+| mirror     | boolean         | mirror shapes with flips=1 flag      |
 | xcur_sizes | list of numbers | compile xcursors of these sizes      |
 | cleanup    | list of strings | delete "hycur" or "xcur" build files |
 
