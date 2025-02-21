@@ -69,6 +69,15 @@ what `accurse` looks for in the metadata file.
 | xcur_sizes | list of numbers | compile xcursors of these sizes      |
 | cleanup    | list of strings | delete "hycur" or "xcur" build files |
 
+### `[cursors]`
+This table should have `[cursors.shape]` sub-tables. A **shape** means a single
+cursor in a theme, such as *left_ptr*, *pointer*, and *help*. If you define a
+static shape using `[cursors.shape]`, `accurse` will search for `shape.svg`
+recursively in the directory that contains `metadata.toml`. If you define an
+animated shape with `[cursors.shape]`, `accurse` looks for `shape*.svg`
+recursively. This allows you to have files like `shape-01.svg`, `shape-02.svg`,
+and so on. The expected key/value pair for each sub-table follows.
+
 ### `[cursors.shape]`
 
 | Field      | Type            | Description                       |
