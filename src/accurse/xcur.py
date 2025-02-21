@@ -8,6 +8,9 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
     print('Making xcursors ...')
 
     png_sizes = data['config'].get('xcur_sizes', [])
+    if not png_sizes:
+        print('No xcursors to compile.')
+        return True
 
     png_path = dest_path/'pngs'
     png_path.mkdir(parents=True)
@@ -33,8 +36,8 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
         if data['config'].get('mirror', 0) == 1 and props.get('flips', 0) == 1:
             xhot = canvas_sz - xhot
 
-        # xcursorgen can ignore ani_delay for static cursors
-        ani_delay = props.get('anim_delay', 0)
+        # xcursorgen sets delay=50 for static cursors anyway
+        delay = props.get('anim_delay', 25)
 
         shape_in_str = ''
         # make pngs in size dirs; populate shape_in_str
@@ -54,7 +57,7 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
                     f'{int(xhot/canvas_sz*png_sz+0.5)} '
                     f'{int(yhot/canvas_sz*png_sz+0.5)} '
                     f'{sz_path/png_name} '
-                    f'{ani_delay}\n'
+                    f'{delay}\n'
                 )
                 shape_in_str += inc_str
 
@@ -89,7 +92,7 @@ def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
     with index_path.open('w') as f:
         f.write(index_str)
 
-    if 'xcur' in data.get('config', {}).get('cleanup', []):
+    if 'xcur' in data['config'].get('cleanup', []):
         shutil.rmtree(png_path)
 
     print('Finished making xcursors.\n')

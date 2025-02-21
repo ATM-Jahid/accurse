@@ -32,9 +32,9 @@ def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
 
         file_str = ''
         if props.get('animated', 0) == 1:
-            ani_delay = props['anim_delay']
+            delay = props.get('anim_delay', 25)
             for svg_f in svg_files:
-                file_str += f'define_size = 0, {svg_f}, {ani_delay}\n'
+                file_str += f'define_size = 0, {svg_f}, {delay}\n'
         else:
             file_str += f'define_size = 0, {svg_files[0]}'
 
@@ -58,15 +58,15 @@ def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
                 if path.is_file():
                     hlc_f.write(path, path.name)
 
-        if 'hycur' in data.get('config', {}).get('cleanup', []):
+        if 'hycur' in data['config'].get('cleanup', []):
             shutil.rmtree(hypr_shape_path)
 
     manifest_hl_str = (
         f'cursors_directory = hyprcursors\n'
         f'name = {data['theme']['name']}\n'
         f'description = {data['theme']['description']}\n'
-        f'version = {data['theme']['version']}\n'
-        f'author = {data['theme']['author']}\n'
+        f'version = {data['theme'].get('version', 'none')}\n'
+        f'author = {data['theme'].get('author', 'nobody')}\n'
     )
 
     manifest_hl_path = dest_path/'manifest.hl'

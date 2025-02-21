@@ -66,14 +66,14 @@ assets/
   │   ├── help.svg
   │   ├── left_ptr.svg
   │   ├── progress/
-  │   │   ├──  progress-01.svg
-  │   │   ├──  progress-02.svg
+  │   │   ├── progress-01.svg
+  │   │   ├── progress-02.svg
   │   │   └── ...
   │   ├── text.svg
   │   ├── wait-01.svg
   │   ├── wait-02.svg
   │   └── ...
-  ├── AC-Bibata/   # Output folder after running accurse
+  ├── AC-Bibata/   # Output directory after running accurse
 ```
 
 ## Metadata Specification
@@ -118,8 +118,8 @@ The following tables specify what `accurse` looks for in the metadata file:
 |-------------|--------|--------------------------|----------|
 | name        | string | name of the theme        | yes      |
 | description | string | description of the theme | yes      |
-| version     | string | version of the theme     | yes      |
-| author      | string | author of the theme      | yes      |
+| version     | string | version of the theme     | no       |
+| author      | string | author of the theme      | no       |
 
 ### `[config]`
 | Field      | Type             | Description                          | Required |
@@ -130,7 +130,7 @@ The following tables specify what `accurse` looks for in the metadata file:
 | old_substr | list of strings  | target substrings                    | no       |
 | new_substr | list of strings  | replacement substrings               | no       |
 | mirror     | 0 (default) or 1 | mirror shapes with flips=1 flag      | no       |
-| xcur_sizes | list of numbers  | compile xcursors of these sizes      | yes      |
+| xcur_sizes | list of numbers  | compile xcursors of these sizes      | no       |
 | cleanup    | list of strings  | delete "hycur" or "xcur" build files | no       |
 
 ### `[cursors]`

@@ -75,14 +75,19 @@ def flip_hor(file: Path) -> bool:
     return True
 
 def proc_svgs(dest_path: Path, data: dict[str, any]) -> bool:
-    # Make sure shape_size exists and is positive in check_integrity
-    shape_size = data['config'].get('shape_size', 32)
+    shape_size = data['config']['shape_size']
 
-    # Make sure they are of equal length in check_integrity
     old_substr = data['config'].get('old_substr', [])
     new_substr = data['config'].get('new_substr', [])
 
-    mod_substr = 0 if not old_substr else 1
+    if not old_substr or not new_substr:
+        mod_substr = 0
+    elif len(old_substr) != len(new_substr):
+        print('WARNING: "old_substr" & "new_substr" are of different length!')
+        mod_substr = 0
+    else:
+        mod_substr = 1
+
     if mod_substr:
         # String replacements are not shape-specific
         hash_substr = [gen_hash(x, 32) for x in old_substr]

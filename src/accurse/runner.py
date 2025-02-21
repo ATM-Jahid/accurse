@@ -1,6 +1,6 @@
 import sys
 from pathlib import Path
-from accurse.toml_util import read_toml, check_integrity
+from accurse.toml_util import read_toml, check_toml
 from accurse.dir_util import get_dest_path, create_svgdir
 from accurse.svg_util import proc_svgs
 from accurse.hycur import handle_hycur
@@ -16,13 +16,13 @@ def main() -> bool:
         print('Aborting!')
         return False
 
-    # Check for toml integrity here
-    valid_toml = check_integrity(toml_data)
+    # Check for toml validity here
+    valid_toml = check_toml(toml_data)
     if not valid_toml:
         print('Aborting!')
         return False
 
-    # metadata.toml should be in the same dir as svg assets
+    # Create AC-Theme directory
     asset_path = metadata_path.parent
     dest_path = get_dest_path(asset_path)
     if dest_path is None:
