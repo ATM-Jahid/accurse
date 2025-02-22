@@ -35,8 +35,10 @@ def main() -> bool:
     # Process svgs: rescale, recolor, flip
     proc_svgs(dest_path, toml_data)
 
+    # Copy svgs, create meta, and zip subdirs
     handle_hycur(dest_path, toml_data)
 
+    # Convert to pngs, make shape configs, and call xcursorgen
     handle_xcur(dest_path, toml_data)
 
     print('Packaging done!')

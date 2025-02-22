@@ -1,4 +1,6 @@
 # TODO
-- Recheck Bibata & Breeze hotspots
-- Parallelize SVG to PNG conversion
+- Refactor `accurse`
+  - Rethink workflow
+  - Cache SVG paths
+  - Parallelize heavy processes
 - Bump to 0.2.0
