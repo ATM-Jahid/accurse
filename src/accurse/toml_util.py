@@ -1,4 +1,4 @@
-from typing import Any, Optional
+from typing import Any
 from pathlib import Path
 import tomllib
 
@@ -35,7 +35,7 @@ def check_toml(toml_data: dict[str, Any]) -> bool:
 
     return True
 
-def read_toml(metadata_path: Path) -> Optional[dict[str, Any]]:
+def read_toml(metadata_path: Path) -> dict[str, Any] | None:
     try:
         with metadata_path.open('rb') as file:
             return tomllib.load(file)

@@ -1,8 +1,8 @@
 import shutil
-from typing import Optional
+from typing import Any
 from pathlib import Path
 
-def get_dest_path(asset_path: Path) -> Optional[Path]:
+def get_dest_path(asset_path: Path) -> Path | None:
     asset_dirname = asset_path.name
     pack_dirname = f'AC-{asset_dirname}'
     dest_path = asset_path.parent/pack_dirname
@@ -16,7 +16,7 @@ def get_dest_path(asset_path: Path) -> Optional[Path]:
         print(f'Created dir "{dest_path}".\n')
         return dest_path
 
-def create_svgdir(asset_path: Path, dest_path: Path, data: dict[str, any]) -> bool:
+def create_svgdir(asset_path: Path, dest_path: Path, data: dict[str, Any]) -> bool:
     # Copy shape svgs if mentioned in metadata.toml
     for shape, props in data['cursors'].items():
         new_path = dest_path/'svgs'/shape

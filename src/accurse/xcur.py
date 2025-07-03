@@ -1,10 +1,11 @@
 import os
 import shutil
+from typing import Any
 from pathlib import Path
 import subprocess
 from accurse.svg_util import gen_png
 
-def handle_xcur(dest_path: Path, data: dict[str, any]) -> bool:
+def handle_xcur(dest_path: Path, data: dict[str, Any]) -> bool:
     print('Making xcursors ...')
 
     png_sizes = data['config'].get('xcur_sizes', [])

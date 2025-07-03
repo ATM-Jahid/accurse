@@ -1,8 +1,9 @@
 import shutil
+from typing import Any
 from pathlib import Path
 import zipfile
 
-def handle_hycur(dest_path: Path, data: dict[str, any]) -> bool:
+def handle_hycur(dest_path: Path, data: dict[str, Any]) -> bool:
     print('Making hyprcursors ...')
 
     hycur_path = dest_path/'hyprcursors'

@@ -1,5 +1,6 @@
 import shutil
 import subprocess
+from typing import Any
 from pathlib import Path
 from lxml import etree
 from accurse.hash_util import gen_hash
@@ -74,7 +75,7 @@ def flip_hor(file: Path) -> bool:
 
     return True
 
-def proc_svgs(dest_path: Path, data: dict[str, any]) -> bool:
+def proc_svgs(dest_path: Path, data: dict[str, Any]) -> bool:
     shape_size = data['config']['shape_size']
 
     old_substr = data['config'].get('old_substr', [])
